@@ -1,0 +1,4 @@
+1. Setiap kali ingin membuat table baru menggunakan sequileze, maka kita harus membuat model terlebih dahulu dengna CLI sequelize ./node_modules/.bin/sequelize-cli model:generate --name (nama table) --attributes (column : tipe data) --underscored (true or false untuk mengubah nama table menjadi snake_case)
+2. Setelah membuat model, maka akan terbuat 2 file yaitu model dan migration. Model digunakan untuk mengatur relasi antar table, sedangkan migration digunakan untuk membuat table di database.
+3. Setelah membuat model dan migration, maka kita harus melakukan migrate ke database dengan CLI sequelize ./node_modules/.bin/sequelize-cli db:migrate
+4. Setelah melakukan migrate, maka akan terbuat table baru di database.
